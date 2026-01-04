@@ -72,7 +72,7 @@ nav {
 nav a {
     padding: 0px 30px;
 
-    color: #ffffff;
+    color: #29A66C;
 
     text-decoration: none;
 
@@ -87,6 +87,7 @@ main {
     min-width: 300px;
 
     margin: auto;
+    margin-bottom: 20px;
 }
 
 main h1 {
@@ -99,6 +100,14 @@ main h1 {
     padding: 10px;
 
     text-align: center;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.400);
+}
+
+main div p {
+    font-family: var(--fontepadrao);
+    font-size: 1em;
+
 }
 
 main article > p {
@@ -108,23 +117,40 @@ main article > p {
     font-weight: bold;
     font-size: 1.2em;
 
-    max-width: 1000px;
+    max-width: 950px;
     margin: auto;
 
+}
+
+.comidas {
+    background-color: #fff;
+    display: inline-block;
+    border: solid;
 }
 
 .coluna {
-    columns: 2;
     text-align: center;
+    border: solid;
+
+    background-color: red;
 
     padding: 30px;
+}
 
+.block {
+    display: inline-block;
+    columns: 2;
+
+    margin: 20px;
 }
 
 .coluna p {
-
-
     margin: auto;
+}
+
+.imgcomidas {
+    width: 100px;
+    border: solid 1px;
 }
 
 footer {
