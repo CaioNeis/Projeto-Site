@@ -11,7 +11,7 @@
 
 :root {
     --cor00:#ffffff;
-    --cor01:#8C2703;
+    --cor01:#b4512d;
     --cor02:#D98F4E;
     --cor03:#F2E744;
     --cor04:#038C5A;
@@ -33,7 +33,7 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to top, var(--cor01), #ca9b44be);
+    background-image: linear-gradient(to top,#ca9b44be  , var(--cor01));
 
     padding: 30px;
 
@@ -45,7 +45,8 @@ header h1 {
     font-family: var(--fontecomida);
     font-size: 3em;
     padding-bottom: 5px;
-    color: #ffffff;
+
+    color: var(--cor00);
 
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.800);
 }
@@ -61,11 +62,13 @@ header p {
 }
 
 nav {
-    background-color: var(--cor01);
+    background-color: #ca9b44be;
 
     padding: 20px;
 
     text-align: center;
+
+    box-shadow: -10px 5px 4px rgba(0, 0, 0, 0.151);
 
 }
 
@@ -81,6 +84,7 @@ nav a {
     font-family: var(--fontepadrao);
     font-weight: bold;
 
+    transition: 0.5s;
 }
 
 nav a:hover {
@@ -91,14 +95,14 @@ nav a:hover {
 main {
     background-color:  #ca9b44be;
 
-    max-width: 1000px;
+    max-width: 1200px;
     min-width: 300px;
     margin: auto;
     margin-bottom: 20px;
 
     border-radius: 0px 0px 10px 10px;
 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.500);
 }
 
 main h1 {
@@ -114,13 +118,14 @@ main h1 {
 
     text-align: center;
 
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.918);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.918);
 }
 
 main div p {
     font-family: var(--fontepadrao);
     font-size: 1em;
     font-weight: bold;
+
 
     color: var(--cor05);
 }
@@ -135,38 +140,54 @@ main article > p {
     max-width: 950px;
     margin: auto;
 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.336);
+
 }
 
 main h2 {
     font-family: var(--fontecomida);
 
+    font-size: 2em;
+
     color: var(--cor05);
+
+    color: var(--cor05);
+
+    margin: 10px;
 
 }
 
 .comidas {
     background-color: rgb(233, 220, 196);
     display: inline-block;
-    border: solid 2px;
 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.589);
 
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
+
+    overflow: hidden;
+
+    
+
+}
+
+.comidas:hover {
 }
 
 .coluna {
-    text-align: center;
-
     margin: auto;
 
 }
 
 .block {
-    display: inline-block;
     columns: 2;
 
     margin: 20px;
+    text-align: center;
+
+    padding: 20px;
+
 }
 
 .coluna p {
@@ -187,22 +208,33 @@ main h2 {
     margin: 18px 120px;
 
     border-radius: 4px;
-
+    transition: 0.5s;
     border: solid 1px var(--cor05);
+
+    box-shadow: 0px 0px -10px;
 
 }
 
 .botao:hover {
-    background-color: #ca9b44be;
-    transition-duration: 0.5s;
-
+    background-color: var(--cor05);
+    color: var(--cor00);
 }
 
 .imgcomidas {
-    width: 468px;
-    border: solid 1px;
+    width: 480px;
+    margin: auto;
 
-    border-radius: 5px 5px 0px 0px;
+    display: inline-block;
+
+    border-radius: 10px 10px 0px 0px;
+
+    transition: 0.5s ;
+}
+
+.imgcomidas:hover {
+    
+
+    transform: scale(1.05);
 }
 
 footer {
