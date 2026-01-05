@@ -29,11 +29,11 @@
 }
 
 body {
-    background-color: #F2E9BB;
+    background-color:#ca9b44be;
 }
 
 header {
-    background-image: linear-gradient(to top,#ca9b44be  , var(--cor01));
+    background-image: linear-gradient(to top,#FF8233  , var(--cor01));
 
     padding: 30px;
 
@@ -46,15 +46,15 @@ header h1 {
     font-size: 3em;
     padding-bottom: 5px;
 
-    color: var(--cor00);
+    color: #ffffff;
 
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.800);
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.800);
 }
 header p {
     color: white;
     font-weight: bold;
     font-family: var(--fontepadrao);
-    font-size: 1.2em;
+    font-size: 1.4em;
 
     margin: auto;
 
@@ -62,7 +62,7 @@ header p {
 }
 
 nav {
-    background-color: #ca9b44be;
+    background-image: linear-gradient(to top, var(--cor01), #FF8233);
 
     padding: 20px;
 
@@ -81,19 +81,20 @@ nav a {
 
     border-radius: 5px;
 
-    font-family: var(--fontepadrao);
+    font-family: var(--fontedestaque);
+    font-size: 2em;
     font-weight: bold;
 
     transition: 0.5s;
 }
 
 nav a:hover {
-    background-color: var(--cor02);
-    color: var(--cor00);
+    background-color: rgba(255, 255, 255, 0.425);
+    color: var(--cor05);
 }
 
 main {
-    background-color:  #ca9b44be;
+    background-image: linear-gradient(to bottom, var(--cor01), #FF8233 150px);
 
     max-width: 1200px;
     min-width: 300px;
@@ -106,7 +107,7 @@ main {
 }
 
 main h1 {
-    font-family: var(--fontedestaque);
+    font-family: var(--fontecomida);
 
     color: var(--cor00);
     
@@ -131,11 +132,13 @@ main div p {
 }
 
 main article > p {
+    color: var(--cor00);
+
     text-align: center;
 
     font-family: var(--fontepadrao);
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.3em;
 
     max-width: 950px;
     margin: auto;
@@ -222,19 +225,16 @@ main h2 {
 
 .imgcomidas {
     width: 480px;
-    margin: auto;
-
-    display: inline-block;
 
     border-radius: 10px 10px 0px 0px;
 
-    transition: 0.5s ;
+    transition: 1s ;
 }
 
 .imgcomidas:hover {
     
 
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 footer {
