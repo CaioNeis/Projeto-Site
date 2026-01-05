@@ -152,12 +152,13 @@ main h2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.377);
 
     border-radius: 8px;
+    text-align: center;
 }
 
 .coluna {
     text-align: center;
 
-    padding: 25px;
+    margin: auto;
 
 }
 
@@ -198,10 +199,10 @@ main h2 {
 }
 
 .imgcomidas {
-    width: 300px;
+    width: 468px;
     border: solid 1px;
 
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 footer {
