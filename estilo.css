@@ -94,7 +94,7 @@ nav a:hover {
 }
 
 main {
-    background-image: linear-gradient(to bottom, var(--cor01), #FF8233 150px);
+    background-image: linear-gradient(to bottom, var(--cor01), #fd873ea4 300px);
 
     max-width: 1200px;
     min-width: 300px;
@@ -123,6 +123,10 @@ main h1 {
 }
 
 main div p {
+    max-width: 400px;
+
+    margin: auto;
+
     font-family: var(--fontepadrao);
     font-size: 1em;
     font-weight: bold;
