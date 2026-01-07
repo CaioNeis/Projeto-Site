@@ -70,6 +70,8 @@ nav {
 
     box-shadow: -10px 5px 4px rgba(0, 0, 0, 0.151);
 
+    position:sticky;
+    top: 0px;
 }
 
 nav a {
