@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: fontecomida;
+    src: url("fontes/Sauce\ Tomato.otf") format("opentype");
+}
+
+:root {
+    --cor00:#ffffff;
+    --cor01:#b4512d;
+    --cor02:#D98F4E;
+    --cor03:#F2E744;
+    --cor04:#038C5A;
+    --cor05:#3F3D40;
+    --cor06:#000000;
+
+    --fontepadrao: "Open Sans";
+    --fontedestaque: "Bebas Neue";
+    --fontecomida: "fontecomida";
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:#ca9b44be;
+}
+
+header {
+    background-image: linear-gradient(to top,#FF8233  , var(--cor01));
+
+    padding: 100px;
+
+    text-align: center;
+
+
+}
+header h1 {
+    font-family: var(--fontecomida);
+    font-size: 3em;
+    padding-bottom: 5px;
+
+    color: #ffffff;
+
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.800);
+}
+header p {
+    color: white;
+    font-weight: bold;
+    font-family: var(--fontepadrao);
+    font-size: 1.4em;
+
+    margin: auto;
+
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.800);
+}
