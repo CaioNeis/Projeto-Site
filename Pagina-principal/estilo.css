@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: fontecomida;
-    src: url("fontes/Sauce\ Tomato.otf") format("opentype");
+    src: url("/fontes/Sauce\ Tomato.otf") format("opentype");
 }
 
 :root {
@@ -72,6 +72,8 @@ nav {
 
     position:sticky;
     top: 0px;
+
+    z-index: 10; /* z-index: --> É tipo a ordem de camada, quanto maior o numero mais alto/ou mais na frente o objeto vai ficar na tela*/
 }
 
 nav a {
@@ -99,7 +101,7 @@ main {
     background-image: linear-gradient(to bottom, var(--cor01), #fd873ea4 300px);
 
     max-width: 1200px;
-    min-width: 300px;
+    
     margin: auto;
     margin-bottom: 20px;
 
@@ -181,12 +183,8 @@ main h2 {
 
 }
 
-.comidas:hover {
-}
-
 .coluna {
     margin: auto;
-
 }
 
 .block {
@@ -230,11 +228,13 @@ main h2 {
 }
 
 .imgcomidas {
-    width: 480px;
+    max-width: 480px;
 
     border-radius: 10px 10px 0px 0px;
 
     transition: 1s ;
+
+    z-index: 1; /* z-index: --> É tipo a ordem de camada, quanto maior o numero mais alto/ou mais na frente o objeto vai ficar na tela*/
 }
 
 .imgcomidas:hover {
@@ -255,4 +255,14 @@ footer {
     padding: 5px;
 
     text-align: center;
+}
+@media (max-width: 1060px) {
+    .block {
+        columns: 1;
+        margin-bottom: -60px;
+    
+    }
+    .comidas {
+        margin-bottom: 20px;
+    }
 }
